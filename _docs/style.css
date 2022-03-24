@@ -8,6 +8,10 @@
     --desk: hsl(180, 50%, 35%);
 }
 
+*::selection {
+    background: transparent;
+}
+
 body {
     margin: 0;
     font-family: monospace;
