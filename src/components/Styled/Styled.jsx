@@ -69,6 +69,7 @@ const WindowButton = styled.span`
   margin: 1px 2px;
   padding: 1px 4px;
   min-width: 100px;
+  cursor: pointer;
 `
 
 const WindowContent = styled.div`

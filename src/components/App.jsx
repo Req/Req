@@ -4,6 +4,7 @@ import ModelViewer from "./ThreeDee/Threedee.jsx"
 import Window from "./Window.jsx"
 import "./style.css"
 import Matrix from "./Matrix.jsx"
+import RainbowPaint from "./RainbowPaint.jsx"
 
 function startDrag(e, pointer) {
   if (document.body.classList.contains("dragging")) {
@@ -14,8 +15,23 @@ function startDrag(e, pointer) {
   // Save the offset of the mouse (how far from window "titlebar" origo did dragging start from)
   const { offsetX, offsetY } = e.nativeEvent
   function handlePointerMovement(e) {
-    pointer.current.style.left = e.x - 1 - offsetX + "px"
-    pointer.current.style.top = e.y - 1 - offsetY + "px"
+    let toX = e.x - 1 - offsetX
+    let toY = e.y - 1 - offsetY
+
+    // constrain left and top
+    toX = toX<0?0:toX
+    toY = toY<0?0:toY
+
+    if (window.visualViewport?.width) {
+      if (toX>window.visualViewport?.width-200) {
+        toX = window.visualViewport?.width-200
+      }
+     if (toY>window.visualViewport?.height-200) {
+      toY = window.visualViewport?.height-200
+      }
+    }
+    pointer.current.style.left = toX + "px"
+    pointer.current.style.top = toY + "px"
   }
 
   // events bubble up to the body
@@ -48,9 +64,14 @@ function App() {
 
     if (!id) return
 
+    if (windows.find(w => w.id === id)) { return }
+
     let content = null
     if (id === "three") {
       content = <ModelViewer scale="1" modelPath={"/cubes.glb"} />
+    }
+    if (id === "paint") {
+      content = <RainbowPaint />
     }
     if (id === "matrix") {
       content = <Matrix />
@@ -86,7 +107,7 @@ function App() {
       ))}
       <Menu className="box blockhover">
         <ProgramList onClick={spawn}>
-          <ProgramListItem data-title="Paint" data-id="1">
+          <ProgramListItem data-title="Paint" data-id="paint">
             Rainbow Paint
           </ProgramListItem>
           <ProgramListItem data-title="Not xEyes" data-id="2">
