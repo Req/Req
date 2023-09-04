@@ -1,5 +1,4 @@
-<p align="center">
-  <br/> Joel Peltonen, he/him <br/>
+<p align="center" title="It's me!" background="lime" bgcolor="#fee">
   <br/>
   <a href="https://stackoverflow.com/users/694325/"><img src="https://stackoverflow.com/users/flair/694325.png"/></a>
   <br/>
