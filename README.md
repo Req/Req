@@ -5,6 +5,7 @@
   <br/>
   <a href="https://digitalcareerinstitute.org/">DCI</a> Web Dev Coordinator :man_beard:<br/>
   Software generalist / code monkey :monkey_face:<br/>
-  Warden for two cats :cat:<br/>
+  Warden for two cats 🐈‍⬛🐈 <br/>
+  Drums for <a href="https://havarie.band/">Havarie</a><br/>
   <br/>
 </p>
