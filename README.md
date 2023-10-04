@@ -8,9 +8,11 @@
   Warden for two cats 🐈‍⬛🐈 <br/>
   Drums for <a href="https://havarie.band/">Havarie</a><br/>
   <br/>
+
+  <img src="./a.svg">
+
 </p>
 
-![](./a.svg)
 
 <br/>
 <br/>

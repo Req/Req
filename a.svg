@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="150" style="margin: 0 auto;">
+    <!-- Now go back to coding!                -->
+    <style>
+    svg {
+        background:#fee;
+        margin: 0 auto;
+    }
+
+    #x {
+        animation: blorp 10s infinite, florp 2s infinite;
+    }
+
+    @keyframes florp {
+        0%,100%{ fill:#FEE; r: 20px; }
+        50%{ fill:#FFF; r: 10px }
+    }
+
+    @keyframes blorp{
+        0%,100%{ transform: translate(0%, 0%); }
+        7%{ transform: translate(-16%, 4%); }
+        10%{ transform: translate(0%, 0%); }
+        15% {    transform: translate(33%, -33%); }
+        22%{ transform: translate(0%, 0%); }
+        30% {    transform: translate(-39%, -54%); }
+        37%{ transform: translate(0%, 0%); }
+        45% {    transform: translate(35%, -16%); }
+        52%{ transform: translate(0%, 0%); }
+        60% {    transform: translate(-2%, 51%); }
+        68%{ transform: translate(0%, 0%); }
+        75% {    transform: translate(-28%, -26%); }
+        87%{ transform: translate(0%, 0%); }
+        93% {    transform: translate(-57%, 63%); }
+    }
+    </style>
+
+    <g fill="black" id="x">
+        <circle r="10" cx="50%" cy="50%" />
+    </g>
+</svg> 
