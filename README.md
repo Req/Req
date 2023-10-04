@@ -9,8 +9,11 @@
   Drums for <a href="https://havarie.band/">Havarie</a><br/>
   <br/>
 </p>
+
+![](./a.svg)
+
 <br/>
 <br/>
 <p align="center">
-  but most of all, Samy is my hero
+  but most of all, Samy is my hero 
 </p>
