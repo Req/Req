@@ -8,13 +8,14 @@
     }
 
     #x1,#x2,#x3{ transform-origin: center center;}
-    #x1 { animation: grow 5s linear infinite; }
+    #x1 { animation: grow 2s linear infinite; }
     #x2 { animation: grow 4s linear infinite; }
-    #x3 { animation: grow 6s linear infinite; }
+    #x3 { animation: grow 8s linear infinite; }
 
     @keyframes grow {
-        0%,100%{ transform: scale(.3); }
-        50%{ transform: scale(3); }
+        0%,100%{ transform: scale(.01); }
+        25%{ transform: scale(3); }
+        75%{ transform: scale(4); }
     }
 
     </style>
