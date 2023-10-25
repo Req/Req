@@ -8,6 +8,7 @@
     }
 
     #x1,#x2,#x3{
+        transform: scale(0);
         animation-fill-mode: backwards;
         transform-origin: center center;
         animation: grow 10s linear infinite;
@@ -19,10 +20,10 @@
 
     @keyframes grow {
         0%{ transform: scale(0); }
-        50%{ transform: scale(5); }
-        100%{ transform: scale(100); }
+        75%{ transform: scale(5); }
+        100%{ transform: scale(20); }
 
-        0%, 90% { opacity: 1; }
+        0%, 75% { opacity: 1; }
         100% { opacity: 0; }
     }
 
