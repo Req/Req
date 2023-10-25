@@ -7,15 +7,23 @@
         filter: blur(5px);
     }
 
-    #x1,#x2,#x3{ transform-origin: center center;}
-    #x1 { animation: grow 2s linear infinite; }
-    #x2 { animation: grow 4s linear infinite; }
-    #x3 { animation: grow 8s linear infinite; }
+    #x1,#x2,#x3{
+        animation-fill-mode: backwards;
+        transform-origin: center center;
+        animation: grow 10s linear infinite;
+        mix-blend-mode: difference;
+    }
+    #x1 { animation-delay: 0s; }
+    #x2 { animation-delay: 2s; }
+    #x3 { animation-delay: 5s; }
 
     @keyframes grow {
-        0%,100%{ transform: scale(.01); }
-        25%{ transform: scale(3); }
-        75%{ transform: scale(4); }
+        0%{ transform: scale(0); }
+        50%{ transform: scale(5); }
+        100%{ transform: scale(100); }
+
+        0%, 90% { opacity: 1; }
+        100% { opacity: 0; }
     }
 
     </style>
@@ -41,7 +49,7 @@
         <circle r="55" cx="80%" cy="50%" />
         <circle r="55" cx="90%" cy="50%" />
     </g>
-    <g fill="#fff" id="x3">
+    <g fill="#eef" id="x3">
         <circle r="55" cx="10%" cy="50%" />
         <circle r="55" cx="20%" cy="50%" />
         <circle r="55" cx="30%" cy="50%" />
