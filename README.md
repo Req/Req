@@ -7,11 +7,12 @@
   Software generalist / code monkey :monkey_face:<br/>
   Warden for two cats 🐈‍⬛🐈 <br/>
   Drums for <a href="https://havarie.band/">Havarie</a><br/>
+  Come play <a href="https://play.picoctf.org/users/req-">PicoCTF</a><br/>
   <br/>
-
   <img src="./a.svg">
 
 </p>
+
 
 
 <br/>
