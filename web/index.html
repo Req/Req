@@ -32,26 +32,15 @@
                 background: url(bg.jpg);
                 background-size:cover;
                 font-family: system-ui, sans-serif;
-            }
-
-            .borders {
-                filter: url(#filter);
-                border-left: 25px solid currentColor;
-                border-right: 25px solid currentColor;
-                outline: 100px solid black;
-                min-height: 100vh;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                position: fixed;
-                pointer-events: none;
+                display: flex;
+                justify-content: center;
             }
 
             .wrapper {
-                margin: 2rem auto;
+                margin: 2rem;
                 padding: 1rem;
                 padding-top: 11rem;
-                width: min(60vw, 800px);
+                max-width: 800px;
                 color: #fff;
 
                 border: 12px solid #fff;
@@ -114,14 +103,13 @@
                 &.first {
                     text-align: right;
                     ul {
-                        padding: 0 0 0 2.9em;
+                        padding: 0;
                         list-style: none;
                     }
                 }
 
                 &.second {
                     margin: 0 auto;
-                    width: min(50vw, 700px);
                     div {
                         background: #fff;
                         color: #000;
@@ -142,6 +130,14 @@
             .spacer {
                 padding-top: 1.5rem;
                 padding-bottom: 3rem;
+            }
+
+            @media (max-width: 600px) {
+                h1 { font-size: 12.5vw; }
+                h2 { font-size: 7vw; }
+                h3 { font-size: 6vw; }
+                li, div { font-size: 5vw; }
+
             }
         </style>
     </head>
