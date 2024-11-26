@@ -19,6 +19,7 @@
                 font-family: namebold;
                 src: url(./fonts/GlacialIndifference-Bold.woff);
             }
+
             :root {
                 --color-primary: #000;
                 --color-secondary: hsl(150, 66.7%, 80%);
@@ -29,86 +30,40 @@
             }
 
             body {
-                background: url(bg.jpg);
-                background-size:cover;
+                background-color: #424d5d;
+                color: #fff;
+                background-size: cover;
                 font-family: system-ui, sans-serif;
-                display: flex;
-                justify-content: center;
             }
 
             .wrapper {
-                margin: 2rem;
-                padding: 1rem;
-                padding-top: 11rem;
-                max-width: 800px;
-                color: #fff;
-
+                margin: 2rem auto;
+                padding: 2rem;
+                max-width: 40rem;
                 border: 12px solid #fff;
-                overflow-x: hidden;
             }
 
             h1 {
                 font-family: namebold;
                 font-size: 6rem;
                 margin-left: -4px;
-                span {
-                    display: inline-block;
-                    transition: 2s all cubic-bezier(0.19, 1, 0.22, 1);
-                }
-                &.explode {
-                    span:nth-of-type(01){transform:translateX(800px) translateY(260px); }
-                    span:nth-of-type(02){transform:translateX(800px) translateY(-134px); }
-                    span:nth-of-type(03){transform:translateX(800px) translateY(54px); }
-                    span:nth-of-type(04){transform:translateX(800px) translateY(120px); }
-                    span:nth-of-type(05){transform:translateX(800px) translateY(-260px); }
-                    span:nth-of-type(06){transform:translateX(800px) translateY(282px); }
-                    span:nth-of-type(07){transform:translateX(800px) translateY(-82px); }
-                    span:nth-of-type(08){transform:translateX(800px) translateY(14px); }
-                    span:nth-of-type(09){transform:translateX(800px) translateY(-40px); }
-                    span:nth-of-type(10){transform:translateX(800px) translateY(362px); }
-                }
             }
 
             h2 {
                 font-family: name;
                 font-size: 3rem;
-                span {
-                    display: inline-block;
-                    transition: 2s all cubic-bezier(0.19, 1, 0.22, 1);
-                }
-                &.explode {
-                    span:nth-of-type(01){transform:translateX(800px) translateY(10px); }
-                    span:nth-of-type(02){transform:translateX(800px) translateY(-84px); }
-                    span:nth-of-type(03){transform:translateX(800px) translateY(34px); }
-                    span:nth-of-type(04){transform:translateX(800px) translateY(200px); }
-                    span:nth-of-type(05){transform:translateX(800px) translateY(-140px); }
-                    span:nth-of-type(06){transform:translateX(800px) translateY(62px); }
-                    span:nth-of-type(07){transform:translateX(800px) translateY(42px); }
-                    span:nth-of-type(08){transform:translateX(800px) translateY(-142px); }
-                    span:nth-of-type(09){transform:translateX(800px) translateY(-91px); }
-                    span:nth-of-type(10){transform:translateX(800px) translateY(22px); }
-                    span:nth-of-type(11){transform:translateX(800px) translateY(81px); }
-                    span:nth-of-type(12){transform:translateX(800px) translateY(-80px); }
-                    span:nth-of-type(13){transform:translateX(800px) translateY(-40px); }
-                    span:nth-of-type(14){transform:translateX(800px) translateY(-22px); }
-                    span:nth-of-type(15){transform:translateX(800px) translateY(132px); }
-                    span:nth-of-type(16){transform:translateX(800px) translateY(-100px); }
-                    span:nth-of-type(17){transform:translateX(800px) translateY(30px); }
-                    span:nth-of-type(18){transform:translateX(800px) translateY(-8px); }
-                }
+                letter-spacing: 2px;
             }
 
             section {
                 font-size: 1.5rem;
-                &.first {
+                margin: 6rem 0;
+
+                &.softskills {
                     text-align: right;
-                    ul {
-                        padding: 0;
-                        list-style: none;
-                    }
                 }
 
-                &.second {
+                &.hardskills {
                     margin: 0 auto;
                     div {
                         background: #fff;
@@ -119,60 +74,40 @@
                     }
                 }
 
-                &.third {
+                &.links {
                     text-align: center;
-                    img {
-                        margin:.5em;
-                    }
                 }
             }
 
-            .spacer {
-                padding-top: 1.5rem;
-                padding-bottom: 3rem;
-            }
-
-            @media (max-width: 600px) {
+            @media (max-width: 690px) {
+                .wrapper { margin: 0; max-width:100% }
                 h1 { font-size: 12.5vw; }
                 h2 { font-size: 7vw; }
                 h3 { font-size: 6vw; }
-                li, div { font-size: 5vw; }
-
+                div { font-size: 5vw; }
             }
         </style>
     </head>
 
     <body>
-        <div class="borders">
-        </div>
         <div class="wrapper">
-            <h1>
-                <span>H</span><span>i</span><span>,</span>
-                <span>I</span><span>'</span><span>m</span>
-                <span>J</span><span>o</span><span>e</span><span>l</span>
-            </h1>
-            <h2>
-                <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span>
-                <span>G</span><span>e</span><span>n</span><span>e</span><span>r</span><span>a</span><span>l</span><span>i</span><span>s</span><span>t</span>
-            </h2>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <section class="first">
-                <h3>I do</h3>
-                <ul>
-                    <li>Teaching</li>
-                    <li>Team mgmt</li>
-                    <li>Project mgmt</li>
-                    <li>Content creation</li>
-                    <li>Web apps & sites</li>
-                    <li>Customer contacts</li>
-                    <li>Punk rock drumming</li>
-                </ul>
+            <section>
+                <h1>Hi, I'm Joel</h1>
+                <h2>Software Generalist</h2>
             </section>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <section class="second">
+
+            <section class="softskills">
+                <h3>I do</h3>
+                <div>Teaching</div>
+                <div>Team mgmt</div>
+                <div>Project mgmt</div>
+                <div>Content creation</div>
+                <div>Web apps & sites</div>
+                <div>Customer contacts</div>
+                <div>Punk rock drumming</div>
+            </section>
+
+            <section class="hardskills">
                 <h3>I do</h3>
                 <div>Git</div>
                 <div>SQL</div>
@@ -185,44 +120,18 @@
                 <div>Bit of this, bit of that</div>
                 <div>Sometimes designery things</div>
             </section>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <section class="third">
-                <!-- <h3>I do</h3> -->
-                <a href="https://www.linkedin.com/in/joel-peltonen/"><img src="li.png" alt="LinkedIn logo" width="10%"></a>
-                <a href="https://github.com/req"><img src="gh.png"  alt="GitHub logo" width="10%"></a>
+
+            <section class="links">
+                <a href="https://www.linkedin.com/in/joel-peltonen/"><img src="li.png" alt="LinkedIn logo" width="84px"></a>
+                <a href="https://github.com/req"><img src="gh.png"  alt="GitHub logo" width="84px"></a>
             </section>
-            <div class="spacer"></div>
         </div>
 
-        <svg class="filter" width="1" height="0">
-            <defs>
-                <filter id="filter">
-                    <feTurbulence id="turbulence" type="fractalNoise" baseFrequency="0.01" numOctaves="5"
-                        result="NOISE">
-                    </feTurbulence>
-                    <feGaussianBlur in="SourceGraphic" result="BLURRED" stdDeviation="0"></feGaussianBlur>
-                    <feDisplacementMap id="displacer" in2="NOISE" in="BLURRED" scale="15" xChannelSelector="R"
-                        yChannelSelector="R" result="DISPLACED"></feDisplacementMap>
-                </filter>
-            </defs>
-        </svg>
-
-        <script>
-            // This would be nice with CSS.... but I use firefox
-            // https://caniuse.com/?search=css-scroll-timeline
-            window.addEventListener('scroll', () => {
-                const scrollPosition = window.scrollY;
-                if (scrollPosition > 200) {
-                    document.querySelector("h2").classList.add("explode")
-                    document.querySelector("h1").classList.add("explode")
-                } else {
-                    document.querySelector("h2").classList.remove("explode")
-                    document.querySelector("h1").classList.remove("explode")
-                }
-            });
-        </script>
+        <style>
+            body {
+                background: url(bg.jpg);
+            }
+        </style>
     </body>
 
 </html>
