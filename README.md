@@ -4,8 +4,8 @@
   <br/>
   <br/>
   <a href="https://digitalcareerinstitute.org/">DCI</a> Web Dev Subject Matter Expert :man_beard:<br/>
-  Software generalist / code monkey :monkey_face:<br/>
-  Warden for two cats 🐈‍⬛🐈 <br/>
+  Software generalist<br/>
+  Cat enthusiast<br/>
   Drums for <a href="https://havarie.band/">Havarie</a><br/>
   <br/>
   <br/>
